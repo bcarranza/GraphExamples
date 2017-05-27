@@ -1,6 +1,7 @@
 <html>
     
     <head>
+        <h1>Gráfica de ejemplo</h1>
         <!-- Load the general Google AJAX API -->
         <script type="text/javascript" src="https://www.google.com/jsapi">
         </script>
@@ -17,8 +18,8 @@
                 // Create a data table (initially empty).
                 var data = new google.visualization.DataTable();
                 // Define the columns in the table.
-                data.addColumn('string', 'Day');
-                data.addColumn('number', 'Cookies');
+                data.addColumn('string', 'Month');
+                data.addColumn('number', 'Milk');
                 data.addColumn('number', 'Cakes');
                 // Specify the number of rows in the table.
                 data.addRows(3);
@@ -43,8 +44,8 @@
                 chart = new google.visualization.ColumnChart(chartElement);
                 // Draw it!
                 chart.draw(data, {
-                    width: 500,
-                    height: 300,
+                    width: 1000,
+                    height: 1250,
                     title: 'Bakery Sales',
                     vAxis: {
                         minValue: 0,
